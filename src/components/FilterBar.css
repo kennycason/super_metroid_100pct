@@ -1,0 +1,113 @@
+.filter-bar {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-section label {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.button-group button:hover {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: #ff6b35;
+  transform: translateY(-1px);
+}
+
+.button-group button.active {
+  background: #ff6b35;
+  color: white;
+  border-color: #ff6b35;
+  font-weight: 500;
+}
+
+select, input {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+select option {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-bar {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  .button-group {
+    justify-content: center;
+  }
+  
+  .button-group button {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.85em;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group button {
+    flex: none;
+  }
+}

@@ -1,0 +1,146 @@
+.route-view {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.route-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  transition: all 0.3s ease;
+}
+
+.route-section:hover {
+  border-color: rgba(255, 107, 53, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-title {
+  color: #ff6b35;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+}
+
+.section-icon {
+  font-size: 1.2em;
+}
+
+.section-progress {
+  margin-left: auto;
+  background: rgba(255, 107, 53, 0.2);
+  color: #ff6b35;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+}
+
+.route-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.route-notes {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 10px;
+}
+
+.route-notes h3 {
+  color: #ff6b35;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.route-notes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.route-notes li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 3px solid #ff6b35;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.route-notes li strong {
+  color: #ff8c69;
+}
+
+.route-notes li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .route-view {
+    gap: 20px;
+  }
+  
+  .route-section {
+    padding: 15px;
+  }
+  
+  .section-title {
+    font-size: 1.2em;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .section-progress {
+    order: 3;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  
+  .route-items {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .route-notes {
+    padding: 20px;
+  }
+  
+  .route-notes h3 {
+    font-size: 1.2em;
+  }
+  
+  .route-notes li {
+    padding: 10px 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .route-section {
+    padding: 12px;
+  }
+  
+  .section-title {
+    font-size: 1.1em;
+  }
+  
+  .route-notes {
+    padding: 15px;
+  }
+}
