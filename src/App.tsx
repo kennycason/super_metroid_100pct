@@ -6,6 +6,7 @@ import Header from './components/Header';
 import FilterBar from './components/FilterBar';
 import ProgressTracker from './components/ProgressTracker';
 
+
 type ViewMode = 'route' | 'region' | 'type';
 type ItemType = 'all' | 'energy_tanks' | 'super_missiles' | 'power_bombs' | 'missiles' | 'reserve_tanks' | 'upgrades' | 'bosses';
 
@@ -134,6 +135,8 @@ function App() {
         total={allItems.length} 
         completed={checkedItems.size}
         onReset={resetProgress}
+        checkedItems={checkedItems}
+        allItems={allItems}
       />
       <FilterBar
         viewMode={viewMode}

@@ -563,7 +563,7 @@ export const missiles: Item[] = [
     image: "/images/230px-MissileBrinstar9.png",
     sourceImageUrl: "/images/thumb/c/ce/MissileBrinstar9.png/230px-MissileBrinstar9.png",
     imageName: "230px-MissileBrinstar9.png",
-    nickname: "Missile x2 (Above the above location, up the shaft)",
+    nickname: "Missile x2 (Past invisible bridge)",
     type: "collectible"
   },
   {
@@ -575,7 +575,7 @@ export const missiles: Item[] = [
     image: "/images/230px-MissileBrinstar9.png",
     sourceImageUrl: "/images/thumb/c/ce/MissileBrinstar9.png/230px-MissileBrinstar9.png",
     imageName: "230px-MissileBrinstar9.png",
-    nickname: "Missile x2 (Above the above location, up the shaft)",
+    nickname: "Missile x2 (Past invisible bridge)",
     type: "collectible"
   },
   {
@@ -599,7 +599,7 @@ export const missiles: Item[] = [
     image: "/images/230px-MissileBrinstar12.png",
     sourceImageUrl: "/images/thumb/5/54/MissileBrinstar12.png/230px-MissileBrinstar12.png",
     imageName: "230px-MissileBrinstar12.png",
-    nickname: "Missile (Left over in Kraid's Lair, accessed with a Power Bomb)",
+    nickname: "Missile (Kraid's Lair, with Power Bomb)",
     type: "collectible"
   },
   // Additional specific missiles mentioned in guide.html
@@ -628,6 +628,18 @@ export const missiles: Item[] = [
     type: "collectible"
   },
   {
+    id: "m_norfair_12",
+    name: "Missile",
+    location: "Golden Torizo's Room",
+    room: "Golden Torizo's Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair12.png",
+    sourceImageUrl: "/images/thumb/3/3b/MissileNorfair12.png/230px-MissileNorfair12.png",
+    imageName: "230px-MissileNorfair12.png",
+    nickname: "Missile (Golden Torizo)",
+    type: "collectible"
+  },
+  {
     id: "m_wrecked_ship_gravity_suit",
     name: "Missile",
     location: "Bowling Alley",
@@ -637,6 +649,18 @@ export const missiles: Item[] = [
     sourceImageUrl: "/images/thumb/3/30/MissileWreckedShip3.png/230px-MissileWreckedShip3.png",
     imageName: "230px-MissileWreckedShip3.png",
     nickname: "Missile (Gravity Suit)",
+    type: "collectible"
+  },
+  {
+    id: "m_maridia_8",
+    name: "Missile",
+    location: "Mama Turtle Room",
+    room: "Mama Turtle Room",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia8.png",
+    sourceImageUrl: "/images/thumb/b/b7/MissileMaridia8.png/230px-MissileMaridia8.png",
+    imageName: "230px-MissileMaridia8.png",
+    nickname: "Missile (Mama Turtle)",
     type: "collectible"
   },
   {
@@ -1089,10 +1113,10 @@ export const routeOrder: string[] = [
   "et_norfair_2",
   // Power Bomb (Red door directly left after Crocomire)
   "pb_norfair_1",
-  // Grappling Beam
-  "grappling_beam",
   // Missile (Grappling Beam)
   "m_norfair_grappling_beam",
+  // Grappling Beam
+  "grappling_beam",
   // Missile (Lava tide)
   "m_norfair_7",
   // Missile (Next to green gate) in Crocomire Escape
@@ -1107,12 +1131,12 @@ export const routeOrder: string[] = [
   "m_crateria_2",
   // Missile (Hidden to the left of the main Wrecked Ship shaft)
   "m_wrecked_ship_1",
+  // Phantoon
+  "phantoon",
   // Super Missile (Wrecked Ship East), past the robots
   "sm_wrecked_ship_2",
   // Super Missile (Wrecked Ship West)
   "sm_wrecked_ship_1",
-  // Phantoon
-  "phantoon",
   // Energy Tank (Statue above water, past all the spikes)
   "et_wrecked_ship_1",
   // Missile (Right of attic)
