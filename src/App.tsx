@@ -177,9 +177,9 @@ function App() {
 
         {(viewMode === 'region' || viewMode === 'type') && (
           <div className={`${viewMode}-view`}>
-            <h2 className="view-title">
+            {/* <h2 className="view-title">
               {viewMode === 'region' ? '🗺️ Items by Region' : '🔧 Items by Type'}
-            </h2>
+            </h2> */}
             {Object.entries(getItemsForView() as { [key: string]: Item[] }).map(([groupName, items]) => (
               <div key={groupName} className="group-section">
                 <h3 className="group-title">{groupName}</h3>
