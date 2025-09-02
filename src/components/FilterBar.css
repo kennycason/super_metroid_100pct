@@ -122,42 +122,32 @@ input::placeholder {
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .filter-bar {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
-  
-  select {
-    min-width: 85px;
-    max-width: 105px;
-  }
-  
-  input {
-    min-width: 105px;
-    max-width: 125px;
-  }
-  
-  .button-group {
-    justify-content: center;
-  }
-  
-  .button-group button {
-    flex: 1;
-    min-width: 0;
-    font-size: 0.85em;
-    padding: 10px 8px;
-  }
-}
+/* Responsive Design - Keep filters in row format until very small screens */
 
 @media (max-width: 480px) {
+  .filter-bar {
+    gap: 12px;
+    padding: 12px;
+    margin: 12px;
+  }
+  
   .button-group {
     flex-direction: column;
   }
   
   .button-group button {
     flex: none;
+    font-size: 0.85em;
+    padding: 8px 10px;
+  }
+  
+  select {
+    min-width: 80px;
+    max-width: 100px;
+  }
+  
+  input {
+    min-width: 100px;
+    max-width: 120px;
   }
 }

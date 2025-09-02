@@ -34,7 +34,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 Built for the speedrunning community. All game content © Nintendo.
 
-## Thanks
+## Thanks & Image Credit
 
 - Adapted from This 100% guide: https://wiki.supermetroid.run/100%25
 - Some room images from: https://metroid.retropixel.net/games/metroid3/ & https://metroid.fandom.com/wiki/Metroid_Wiki

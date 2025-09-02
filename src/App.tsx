@@ -12,6 +12,17 @@ type ItemType = 'all' | 'energy_tanks' | 'super_missiles' | 'power_bombs' | 'mis
 
 function App() {
   const [viewMode, setViewMode] = useState<ViewMode>('route');
+  
+  // Handle view mode changes and reset filters for route view
+  const handleViewModeChange = (mode: ViewMode) => {
+    setViewMode(mode);
+    if (mode === 'route') {
+      // Reset filters when switching to route view to show complete sequence
+      setItemFilter('all');
+      setRegionFilter('all');
+      setSearchTerm('');
+    }
+  };
   const [itemFilter, setItemFilter] = useState<ItemType>('all');
   const [regionFilter, setRegionFilter] = useState<string>('all');
   const [checkedItems, setCheckedItems] = useState<Set<string>>(new Set());
@@ -88,7 +99,7 @@ function App() {
 
   const getItemsForView = () => {
     if (viewMode === 'route') {
-      // Return items in exact route order, but apply filters
+      // Return items in exact route order, with filters applied
       const routeItems = routeOrder
         .map(id => allItems.find(item => item.id === id))
         .filter((item): item is Item => item !== undefined);
@@ -133,7 +144,7 @@ function App() {
       <Header />
               <FilterBar
           viewMode={viewMode}
-          onViewModeChange={setViewMode}
+          onViewModeChange={handleViewModeChange}
           itemFilter={itemFilter}
           onItemFilterChange={setItemFilter}
           regionFilter={regionFilter}

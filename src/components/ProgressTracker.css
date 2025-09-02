@@ -75,47 +75,9 @@
   text-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
 }
 
-@media (max-width: 1024px) {
-  .item-counters {
-    gap: 20px;
-  }
-  
-  .completion-percentage {
-    font-size: 2.5em;
-  }
-}
 
-@media (max-width: 768px) {
-  .progress-tracker {
-    margin: 15px;
-    padding: 12px 15px;
-  }
-  
-  .progress-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .item-counters {
-    gap: 15px;
-  }
-  
-  .counter-icon {
-    /* Sprites will maintain their 24px size on mobile */
-  }
-  
-  .counter-text {
-    font-size: 1.1em;
-  }
-  
-  .counter-label {
-    font-size: 0.8em;
-  }
-  
-  .completion-percentage {
-    font-size: 2.2em;
-  }
-}
+
+
 
 @media (max-width: 480px) {
   .item-counters {
