@@ -5,7 +5,6 @@ import SpriteIcon from './SpriteIcon';
 interface ProgressTrackerProps {
   total: number;
   completed: number;
-  onReset: () => void;
   checkedItems: Set<string>;
   allItems: any[];
 }
@@ -13,7 +12,6 @@ interface ProgressTrackerProps {
 const ProgressTracker: React.FC<ProgressTrackerProps> = ({ 
   total, 
   completed, 
-  onReset, 
   checkedItems, 
   allItems 
 }) => {
@@ -87,11 +85,7 @@ const ProgressTracker: React.FC<ProgressTrackerProps> = ({
           </div>
         </div>
         
-        <div className="progress-actions">
-          <button className="reset-button" onClick={onReset} title="Reset Progress">
-            🔄 Reset
-          </button>
-        </div>
+
         
         <div className="completion-percentage">
           {percentage}%

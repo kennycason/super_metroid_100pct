@@ -131,23 +131,26 @@ function App() {
   return (
     <div className="App">
       <Header />
+              <FilterBar
+          viewMode={viewMode}
+          onViewModeChange={setViewMode}
+          itemFilter={itemFilter}
+          onItemFilterChange={setItemFilter}
+          regionFilter={regionFilter}
+          onRegionFilterChange={setRegionFilter}
+          searchTerm={searchTerm}
+          onSearchChange={setSearchTerm}
+          regions={regions}
+          onReset={resetProgress}
+        />
       <ProgressTracker 
-        total={allItems.length} 
-        completed={checkedItems.size}
-        onReset={resetProgress}
+        total={allItems.filter(item => item.type !== 'boss').length} 
+        completed={Array.from(checkedItems).filter(id => {
+          const item = allItems.find(i => i.id === id);
+          return item && item.type !== 'boss';
+        }).length}
         checkedItems={checkedItems}
         allItems={allItems}
-      />
-      <FilterBar
-        viewMode={viewMode}
-        onViewModeChange={setViewMode}
-        itemFilter={itemFilter}
-        onItemFilterChange={setItemFilter}
-        regionFilter={regionFilter}
-        onRegionFilterChange={setRegionFilter}
-        searchTerm={searchTerm}
-        onSearchChange={setSearchTerm}
-        regions={regions}
       />
 
       <main className="main-content">

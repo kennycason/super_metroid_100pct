@@ -1,9 +1,9 @@
 .filter-bar {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px auto;
+  /* border: 1px solid rgba(255, 107, 53, 0.2); */
+  /* border-radius: 8px; */
+  padding: 10px 15px;
+  margin: 0px auto;
   max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
@@ -102,12 +102,31 @@ input::placeholder {
   color: #888;
 }
 
+.reset-button {
+  background: rgba(255, 107, 53, 0.1);
+  color: #ff6b35;
+  border: 1px solid #ff6b35;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.reset-button:hover {
+  background: #ff6b35;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .filter-bar {
     flex-direction: column;
     gap: 15px;
-    margin: 15px;
     padding: 15px;
   }
   

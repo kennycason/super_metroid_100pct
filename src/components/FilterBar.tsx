@@ -14,6 +14,7 @@ interface FilterBarProps {
   searchTerm: string;
   onSearchChange: (term: string) => void;
   regions: string[];
+  onReset: () => void;
 }
 
 const FilterBar: React.FC<FilterBarProps> = ({
@@ -25,7 +26,8 @@ const FilterBar: React.FC<FilterBarProps> = ({
   onRegionFilterChange,
   searchTerm,
   onSearchChange,
-  regions
+  regions,
+  onReset
 }) => {
   return (
     <div className="filter-bar">
@@ -91,6 +93,12 @@ const FilterBar: React.FC<FilterBarProps> = ({
           value={searchTerm}
           onChange={(e) => onSearchChange(e.target.value)}
         />
+      </div>
+
+      <div className="filter-section">
+        <button className="reset-button" onClick={onReset} title="Reset Progress">
+          Reset
+        </button>
       </div>
     </div>
   );
