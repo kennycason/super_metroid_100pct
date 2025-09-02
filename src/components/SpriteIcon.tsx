@@ -167,7 +167,7 @@ const SpriteIcon: React.FC<SpriteIconProps> = ({
       style={{
         width: size,
         height: size,
-        backgroundImage: `url(/${spriteInfo.spriteFile})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/${spriteInfo.spriteFile})`,
         backgroundPosition: `-${spriteInfo.x * scale}px -${spriteInfo.y * scale}px`,
         backgroundSize: `${scaledSheetWidth}px ${scaledSheetHeight}px`,
         imageRendering: 'pixelated'

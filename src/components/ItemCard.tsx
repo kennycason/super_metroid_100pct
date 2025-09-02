@@ -17,6 +17,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
   showRouteNumber, 
   routeNumber 
 }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const getItemIcon = (itemName: string, itemType: string) => {
     // Specific icons for upgrades and bosses
     if (itemType === 'upgrade') {
@@ -85,7 +86,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
 
       <div className="item-image-container">
         <img 
-          src={item.image}
+          src={`${process.env.PUBLIC_URL}${item.image}`}
           alt={`${item.name} in ${item.room}`}
           className="item-image"
           loading="lazy"
