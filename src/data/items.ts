@@ -603,51 +603,51 @@ export const missiles: Item[] = [
     type: "collectible"
   },
   // Additional specific missiles mentioned in guide.html
-  {
+    {
     id: "m_norfair_wave_beam",
-    name: "Missile", 
-    location: "Wave Beam Room",
-    room: "Wave Beam Room",
+    name: "Missile",
+    location: "Double Chamber",
+    room: "Double Chamber",
     region: "Norfair",
-    image: "/images/missile_wave_beam.png",
-    sourceImageUrl: "/images/missile_wave_beam.png",
-    imageName: "missile_wave_beam.png",
+    image: "/images/229px-MissileNorfair9.png",
+    sourceImageUrl: "/images/thumb/6/67/MissileNorfair9.png/229px-MissileNorfair9.png",
+    imageName: "229px-MissileNorfair9.png",
     nickname: "Missile (Wave Beam)",
     type: "collectible"
   },
-  {
+    {
     id: "m_norfair_grappling_beam",
     name: "Missile",
-    location: "Grappling Beam Room",
-    room: "Grappling Beam Room", 
+    location: "Post Crocomire Jump Room",
+    room: "Post Crocomire Jump Room",
     region: "Norfair",
-    image: "/images/missile_grappling_beam.png",
-    sourceImageUrl: "/images/missile_grappling_beam.png",
-    imageName: "missile_grappling_beam.png",
+    image: "/images/230px-MissileNorfair11.png",
+    sourceImageUrl: "/images/thumb/f/f9/MissileNorfair11.png/230px-MissileNorfair11.png",
+    imageName: "230px-MissileNorfair11.png",
     nickname: "Missile (Grappling Beam)",
     type: "collectible"
   },
   {
     id: "m_wrecked_ship_gravity_suit",
     name: "Missile",
-    location: "Gravity Suit Room",
-    room: "Gravity Suit Room",
+    location: "Bowling Alley",
+    room: "Bowling Alley",
     region: "Wrecked Ship",
-    image: "/images/missile_gravity_suit.png",
-    sourceImageUrl: "/images/missile_gravity_suit.png",
-    imageName: "missile_gravity_suit.png",
+    image: "/images/230px-MissileWreckedShip3.png",
+    sourceImageUrl: "/images/thumb/3/30/MissileWreckedShip3.png/230px-MissileWreckedShip3.png",
+    imageName: "230px-MissileWreckedShip3.png",
     nickname: "Missile (Gravity Suit)",
     type: "collectible"
   },
   {
     id: "m_maridia_draygon",
     name: "Missile",
-    location: "Draygon's Room",
-    room: "Draygon's Room",
+    location: "The Precious Room",
+    room: "The Precious Room",
     region: "Maridia",
-    image: "/images/missile_draygon.png",
-    sourceImageUrl: "/images/missile_draygon.png",
-    imageName: "missile_draygon.png",
+    image: "/images/230px-MissileMaridia3.png",
+    sourceImageUrl: "/images/thumb/9/91/MissileMaridia3.png/230px-MissileMaridia3.png",
+    imageName: "230px-MissileMaridia3.png",
     nickname: "Missile (Draygon)",
     type: "collectible"
   },
@@ -752,9 +752,9 @@ export const majorUpgrades: Item[] = [
     location: "Morphing Ball Room",
     room: "Morphing Ball Room",
     region: "Crateria",
-    image: "/images/morph_ball.png",
-    sourceImageUrl: "/images/morph_ball.png",
-    imageName: "morph_ball.png",
+    image: "/images/items_morphball.png",
+    sourceImageUrl: "/images/items_morphball.png",
+    imageName: "items_morphball.png",
     type: "upgrade"
   },
   {
@@ -763,9 +763,9 @@ export const majorUpgrades: Item[] = [
     location: "Bomb Torizo Room",
     room: "Bomb Torizo Room", 
     region: "Crateria",
-    image: "/images/bombs.png",
-    sourceImageUrl: "/images/bombs.png",
-    imageName: "bombs.png",
+    image: "/images/items_bombs.png",
+    sourceImageUrl: "/images/items_bombs.png",
+    imageName: "items_bombs.png",
     type: "upgrade"
   },
   {
@@ -774,9 +774,9 @@ export const majorUpgrades: Item[] = [
     location: "Charge Beam Room",
     room: "Charge Beam Room",
     region: "Brinstar",
-    image: "/images/charge_beam.png",
-    sourceImageUrl: "/images/charge_beam.png",
-    imageName: "charge_beam.png",
+    image: "/images/beams_charge.png",
+    sourceImageUrl: "/images/beams_charge.png",
+    imageName: "beams_charge.png",
     type: "upgrade"
   },
   {
@@ -785,9 +785,9 @@ export const majorUpgrades: Item[] = [
     location: "Spazer Beam Room",
     room: "Spazer Beam Room",
     region: "Brinstar",
-    image: "/images/spazer.png",
-    sourceImageUrl: "/images/spazer.png",
-    imageName: "spazer.png",
+    image: "/images/beams_spazer.png",
+    sourceImageUrl: "/images/beams_spazer.png",
+    imageName: "beams_spazer.png",
     type: "upgrade"
   },
   {
@@ -796,9 +796,9 @@ export const majorUpgrades: Item[] = [
     location: "Varia Suit Room",
     room: "Varia Suit Room",
     region: "Brinstar",
-    image: "/images/varia_suit.png",
-    sourceImageUrl: "/images/varia_suit.png",
-    imageName: "varia_suit.png",
+    image: "/images/items_varia_suit.png",
+    sourceImageUrl: "/images/items_varia_suit.png",
+    imageName: "items_varia_suit.png",
     type: "upgrade"
   },
   {
@@ -807,9 +807,9 @@ export const majorUpgrades: Item[] = [
     location: "Hi Jump Boots Room",
     room: "Hi Jump Boots Room",
     region: "Norfair",
-    image: "/images/hi_jump_boots.png",
-    sourceImageUrl: "/images/hi_jump_boots.png",
-    imageName: "hi_jump_boots.png",
+    image: "/images/items_hi_jump.png",
+    sourceImageUrl: "/images/items_hi_jump.png",
+    imageName: "items_hi_jump.png",
     type: "upgrade"
   },
   {
@@ -818,9 +818,9 @@ export const majorUpgrades: Item[] = [
     location: "Speed Booster Room",
     room: "Speed Booster Room",
     region: "Norfair",
-    image: "/images/speed_booster.png",
-    sourceImageUrl: "/images/speed_booster.png",
-    imageName: "speed_booster.png",
+    image: "/images/items_speedbooster.png",
+    sourceImageUrl: "/images/items_speedbooster.png",
+    imageName: "items_speedbooster.png",
     type: "upgrade"
   },
   {
@@ -829,9 +829,9 @@ export const majorUpgrades: Item[] = [
     location: "Wave Beam Room",
     room: "Wave Beam Room",
     region: "Norfair",
-    image: "/images/wave_beam.png",
-    sourceImageUrl: "/images/wave_beam.png",
-    imageName: "wave_beam.png",
+    image: "/images/beams_wave.png",
+    sourceImageUrl: "/images/beams_wave.png",
+    imageName: "beams_wave.png",
     type: "upgrade"
   },
   {
@@ -840,9 +840,9 @@ export const majorUpgrades: Item[] = [
     location: "Grappling Beam Room",
     room: "Grappling Beam Room",
     region: "Norfair",
-    image: "/images/grappling_beam.png",
-    sourceImageUrl: "/images/grappling_beam.png",
-    imageName: "grappling_beam.png",
+    image: "/images/items_grappling_beam.png",
+    sourceImageUrl: "/images/items_grappling_beam.png",
+    imageName: "items_grappling_beam.png",
     type: "upgrade"
   },
   {
@@ -851,9 +851,9 @@ export const majorUpgrades: Item[] = [
     location: "Gravity Suit Room",
     room: "Gravity Suit Room",
     region: "Wrecked Ship",
-    image: "/images/gravity_suit.png",
-    sourceImageUrl: "/images/gravity_suit.png",
-    imageName: "gravity_suit.png",
+    image: "/images/items_gravity_suit.png",
+    sourceImageUrl: "/images/items_gravity_suit.png",
+    imageName: "items_gravity_suit.png",
     type: "upgrade"
   },
   {
@@ -862,9 +862,9 @@ export const majorUpgrades: Item[] = [
     location: "Space Jump Room",
     room: "Space Jump Room",
     region: "Maridia",
-    image: "/images/space_jump.png",
-    sourceImageUrl: "/images/space_jump.png",
-    imageName: "space_jump.png",
+    image: "/images/items_space_jump.png",
+    sourceImageUrl: "/images/items_space_jump.png",
+    imageName: "items_space_jump.png",
     type: "upgrade"
   },
   {
@@ -873,9 +873,9 @@ export const majorUpgrades: Item[] = [
     location: "Spring Ball Room",
     room: "Spring Ball Room",
     region: "Maridia",
-    image: "/images/spring_ball.png",
-    sourceImageUrl: "/images/spring_ball.png",
-    imageName: "spring_ball.png",
+    image: "/images/items_spring_ball.png",
+    sourceImageUrl: "/images/items_spring_ball.png",
+    imageName: "items_spring_ball.png",
     type: "upgrade"
   },
   {
@@ -884,9 +884,9 @@ export const majorUpgrades: Item[] = [
     location: "Plasma Beam Room",
     room: "Plasma Beam Room",
     region: "Maridia",
-    image: "/images/plasma_beam.png",
-    sourceImageUrl: "/images/plasma_beam.png",
-    imageName: "plasma_beam.png",
+    image: "/images/beams_plasma.png",
+    sourceImageUrl: "/images/beams_plasma.png",
+    imageName: "beams_plasma.png",
     type: "upgrade"
   },
   {
@@ -895,9 +895,9 @@ export const majorUpgrades: Item[] = [
     location: "Ice Beam Room",
     room: "Ice Beam Room",
     region: "Norfair",
-    image: "/images/ice_beam.png",
-    sourceImageUrl: "/images/ice_beam.png",
-    imageName: "ice_beam.png",
+    image: "/images/beams_ice.png",
+    sourceImageUrl: "/images/beams_ice.png",
+    imageName: "beams_ice.png",
     type: "upgrade"
   },
   {
@@ -906,9 +906,9 @@ export const majorUpgrades: Item[] = [
     location: "Screw Attack Room",
     room: "Screw Attack Room",
     region: "Norfair",
-    image: "/images/screw_attack.png",
-    sourceImageUrl: "/images/screw_attack.png",
-    imageName: "screw_attack.png",
+    image: "/images/items_screw_attackl.png",
+    sourceImageUrl: "/images/items_screw_attackl.png",
+    imageName: "items_screw_attackl.png",
     type: "upgrade"
   },
   {
@@ -917,9 +917,9 @@ export const majorUpgrades: Item[] = [
     location: "X-Ray Scope Room",
     room: "X-Ray Scope Room",
     region: "Brinstar",
-    image: "/images/x_ray_scope.png",
-    sourceImageUrl: "/images/x_ray_scope.png",
-    imageName: "x_ray_scope.png",
+    image: "/images/items_xray.png",
+    sourceImageUrl: "/images/items_xray.png",
+    imageName: "items_xray.png",
     type: "upgrade"
   }
 ];
@@ -932,9 +932,9 @@ export const bosses: Item[] = [
     location: "Kraid's Lair",
     room: "Kraid's Room",
     region: "Brinstar",
-    image: "/images/kraid.png",
-    sourceImageUrl: "/images/kraid.png",
-    imageName: "kraid.png",
+    image: "/images/bosses_kraid.png",
+    sourceImageUrl: "/images/bosses_kraid.png",
+    imageName: "bosses_kraid.png",
     type: "boss"
   },
   {
@@ -943,9 +943,9 @@ export const bosses: Item[] = [
     location: "Wrecked Ship",
     room: "Phantoon's Room",
     region: "Wrecked Ship",
-    image: "/images/phantoon.png",
-    sourceImageUrl: "/images/phantoon.png",
-    imageName: "phantoon.png",
+    image: "/images/bosses_phantoon.png",
+    sourceImageUrl: "/images/bosses_phantoon.png",
+    imageName: "bosses_phantoon.png",
     type: "boss"
   },
   {
@@ -954,9 +954,9 @@ export const bosses: Item[] = [
     location: "Maridia",
     room: "Draygon's Room",
     region: "Maridia",
-    image: "/images/draygon.png",
-    sourceImageUrl: "/images/draygon.png",
-    imageName: "draygon.png",
+    image: "/images/bosses_draygon.png",
+    sourceImageUrl: "/images/bosses_draygon.png",
+    imageName: "bosses_draygon.png",
     type: "boss"
   },
   {
@@ -965,9 +965,9 @@ export const bosses: Item[] = [
     location: "Lower Norfair",
     room: "Ridley's Room",
     region: "Norfair",
-    image: "/images/ridley.png",
-    sourceImageUrl: "/images/ridley.png",
-    imageName: "ridley.png",
+    image: "/images/bosses_ridley.png",
+    sourceImageUrl: "/images/bosses_ridley.png",
+    imageName: "bosses_ridley.png",
     type: "boss"
   },
   {
@@ -976,221 +976,276 @@ export const bosses: Item[] = [
     location: "Tourian",
     room: "Mother Brain's Room",
     region: "Tourian",
-    image: "/images/mother_brain.png",
-    sourceImageUrl: "/images/mother_brain.png",
-    imageName: "mother_brain.png",
+    image: "/images/bosses_mother_brain.png",
+    sourceImageUrl: "/images/bosses_mother_brain.png",
+    imageName: "bosses_mother_brain.png",
+    type: "boss"
+  },
+  {
+    id: "bomb_torizo",
+    name: "Bomb Torizo",
+    location: "Crateria",
+    room: "Bomb Torizo Room",
+    region: "Crateria",
+    image: "/images/bosses_bomb_torizo.png",
+    sourceImageUrl: "/images/bosses_bomb_torizo.png",
+    imageName: "bosses_bomb_torizo.png",
+    type: "boss"
+  },
+  {
+    id: "spore_spawn",
+    name: "Spore Spawn",
+    location: "Brinstar",
+    room: "Spore Spawn's Room",
+    region: "Brinstar",
+    image: "/images/bosses_spore_spwan.png",
+    sourceImageUrl: "/images/bosses_spore_spwan.png",
+    imageName: "bosses_spore_spwan.png",
+    type: "boss"
+  },
+  {
+    id: "crocomire",
+    name: "Crocomire",
+    location: "Norfair",
+    room: "Crocomire's Room",
+    region: "Norfair",
+    image: "/images/bosses_crocomire.png",
+    sourceImageUrl: "/images/bosses_crocomire.png",
+    imageName: "bosses_crocomire.png",
+    type: "boss"
+  },
+  {
+    id: "botwoon",
+    name: "Botwoon",
+    location: "Maridia",
+    room: "Botwoon's Room",
+    region: "Maridia",
+    image: "/images/bosses_botwoon.png",
+    sourceImageUrl: "/images/bosses_botwoon.png",
+    imageName: "bosses_botwoon.png",
+    type: "boss"
+  },
+  {
+    id: "golden_torizo",
+    name: "Golden Torizo",
+    location: "Norfair",
+    room: "Golden Torizo's Room",
+    region: "Norfair",
+    image: "/images/bosses_gold_torizo.png",
+    sourceImageUrl: "/images/bosses_gold_torizo.png",
+    imageName: "bosses_gold_torizo.png",
     type: "boss"
   }
 ];
 
 // Route data based on the guide.html - EXACT sequence matching the HTML list
 export const routeOrder: string[] = [
-  // 1. Morphing Ball
+  // Morphing Ball
   "morph_ball",
-  // 2. Missile (Awakening)
+  // Missile (Awakening)
   "m_brinstar_1", 
-  // 3. Bombs
+  // Bombs
   "bombs",
-  // 4. Energy Tank (Terminator)
+  // Energy Tank (Terminator)
   "et_crateria_1",
-  // 5. Early Super Missile
-  "sm_brinstar_2",
-  // 6. Reserve Tank (In the hands of the Chozo)
-    "rt_brinstar_1",
-  // 7-8. Missile x2 (To the right of Early Supers)
+  // Reserve Tank (In the hands of the Chozo)
+  "rt_brinstar_1",
+  // Missile x2 (To the right of Early Supers)
   "m_brinstar_7",
   "m_brinstar_8",
-  // 9. Missile (Below the bridge)
+  // Early Super Missile
+  "sm_brinstar_2",
+  // Missile (Below the bridge)
   "m_brinstar_3",
-  // 10. Charge Beam
+  // Missile (Charge Beam)
+  "m_brinstar_5",
+  // Charge Beam
   "charge_beam",
-  // 11. Spazer
+  // Spazer
   "spazer",
-  // 12. Varia Suit
-  "varia_suit",
-  // 13. Kraid
+  // Kraid
   "kraid",
-  // 14. Energy Tank (Kraid)
+  // Varia Suit
+  "varia_suit",
+  // Energy Tank (Kraid)
   "et_brinstar_1",
-  // 15. Energy Tank (Hi-Jump Boots)
+  // Energy Tank (Hi-Jump Boots)
   "et_norfair_1",
-  // 16. Hi-Jump Boots
+  // Hi-Jump Boots
   "hi_jump_boots",
-  // 17. Missile (Hi-Jump Boots)
+  // Missile (Hi-Jump Boots)
   "m_norfair_1",
-  // 18. Missile (In center Cathedral lava pit)
+  // Missile (In center Cathedral lava pit)
   "m_norfair_10",
-  // 19. Missile (Hidden in ceiling right before Speed Booster door)
+  // Missile (Hidden in ceiling right before Speed Booster door)
   "m_norfair_3",
-  // 20. Speed Booster
+  // Speed Booster
   "speed_booster",
-  // 21. Missile (Wave Beam)
+  // Missile (Wave Beam)
   "m_norfair_wave_beam",
-  // 22. Wave Beam
+  // Wave Beam
   "wave_beam",
-  // 23. Energy Tank (Crocomire)
+  // Energy Tank (Crocomire)
   "et_norfair_2",
-  // 24. Power Bomb (Red door directly left after Crocomire)
+  // Power Bomb (Red door directly left after Crocomire)
   "pb_norfair_1",
-  // 25. Grappling Beam
+  // Grappling Beam
   "grappling_beam",
-  // 26. Missile (Grappling Beam)
+  // Missile (Grappling Beam)
   "m_norfair_grappling_beam",
-  // 27. Missile (Lava tide)
+  // Missile (Lava tide)
   "m_norfair_7",
-  // 28. Missile (Next to green gate) in Crocomire Escape
+  // Missile (Next to green gate) in Crocomire Escape
   "m_norfair_8",
-  // 29. Missile (Hidden behind Power Bomb (Alpha))
+  // Missile (Hidden behind Power Bomb (Alpha))
   "m_brinstar_11",
-  // 30. Power Bomb (Alpha), the any% pack
+  // Power Bomb (Alpha), the any% pack
   "pb_brinstar_1",
-  // 31. Power Bomb (Beta), Green door left of elevator
+  // Power Bomb (Beta), Green door left of elevator
   "pb_brinstar_2",
-  // 32. Missile (Moat)
+  // Missile (Moat)
   "m_crateria_2",
-  // 33. Missile (Hidden to the left of the main Wrecked Ship shaft)
+  // Missile (Hidden to the left of the main Wrecked Ship shaft)
   "m_wrecked_ship_1",
-  // 34. Super Missile (Wrecked Ship East), past the robots
+  // Super Missile (Wrecked Ship East), past the robots
   "sm_wrecked_ship_2",
-  // 35. Super Missile (Wrecked Ship West)
+  // Super Missile (Wrecked Ship West)
   "sm_wrecked_ship_1",
-  // 36. Phantoon
+  // Phantoon
   "phantoon",
-  // 37. Energy Tank (Statue above water, past all the spikes)
+  // Energy Tank (Statue above water, past all the spikes)
   "et_wrecked_ship_1",
-  // 38. Missile (Right of attic)
+  // Missile (Right of attic)
   "m_wrecked_ship_2",
-  // 39. Missile (Hidden in highest point of the mountain to the left)
+  // Missile (Hidden in highest point of the mountain to the left)
   "m_crateria_4",
-  // 40. Missile (Hidden in ground maze to the left)
+  // Missile (Hidden in ground maze to the left)
   "m_crateria_5",
-  // 41. Missile (Gravity Suit)
+  // Missile (Gravity Suit)
   "m_wrecked_ship_gravity_suit",
-  // 42. Reserve Tank (Gravity Suit)
+  // Reserve Tank (Gravity Suit)
   "rt_wrecked_ship_1",
-  // 43. Gravity Suit
+  // Gravity Suit
   "gravity_suit",
-  // 44. Missile (Bottom left of ocean)
+  // Missile (Bottom left of ocean)
   "m_crateria_6",
-  // 45. Power Bomb (Crateria), top right of Landing Site
+  // Power Bomb (Crateria), top right of Landing Site
   "pb_crateria_1",
-  // 46. Energy Tank (Gauntlet)
+  // Energy Tank (Gauntlet)
   "et_crateria_2",
-  // 47-48. Missile x2 (Crumble shaft after Gauntlet)
+  // Missile x2 (Crumble shaft after Gauntlet)
   "m_crateria_7",
   "m_crateria_8",
-  // 49. Energy Tank (Etecoon)
+  // Energy Tank (Etecoon)
   "et_brinstar_2",
-  // 50. Super Missile (Etecoon), green door to the left
+  // Super Missile (Etecoon), green door to the left
   "sm_brinstar_3",
-  // 51. Power Bomb (Etecoon)
+  // Power Bomb (Etecoon)
   "pb_brinstar_4",
-  // 52. Missile (Behind the Grapple blocks)
+  // Missile (Behind the Grapple blocks)
   "m_brinstar_4",
-  // 53. Power Bomb (Hidden behind/below the above item's location)
+  // Power Bomb (Hidden behind/below the above item's location)
   "pb_brinstar_5",
-  // 54. Energy Tank (Behind blue gate behind Sidehoppers)
+  // Energy Tank (Behind blue gate behind Sidehoppers)
   "et_brinstar_4",
-  // 55. Super Missile (Spore Spawn)
+  // Super Missile (Spore Spawn)
   "sm_brinstar_1",
-  // 56. Missile (Charge Beam)
-  "m_brinstar_5",
-  // 57. Energy Tank (Behind/below Charge Beam's location)
+  // Energy Tank (Behind/below Charge Beam's location)
   "et_brinstar_5",
-  // 58. Missile (Green Hill pipe)
+  // Missile (Green Hill pipe)
   "m_brinstar_6",
-  // 59. Missile (Main Street)
+  // Missile (Main Street)
   "m_maridia_1",
-  // 60. Energy Tank (Mama Turtle)
+  // Energy Tank (Mama Turtle)
   "et_maridia_2",
-  // 61. Missile (Mama Turtle)
+  // Missile (Mama Turtle)
   "m_maridia_8",
-  // 62. Super Missile (Main Street), "Crab Supers"
+  // Super Missile (Main Street), "Crab Supers"
   "sm_maridia_1",
-  // 63. Missile (Hidden in right side of Maridian beach)
+  // Missile (Hidden in right side of Maridian beach)
   "m_maridia_4",
-  // 64. Super Missile (Hidden in sand pit below a Choot)
+  // Super Missile (Hidden in sand pit below a Choot)
   "sm_maridia_3",
-  // 65. Missile (Same location as above)
+  // Missile (Same location as above)
   "m_maridia_5",
-  // 66. Missile (Draygon)
+  // Missile (Draygon)
   "m_maridia_draygon",
-  // 67. Draygon
+  // Draygon
   "draygon",
-  // 68. Space Jump
+  // Space Jump
   "space_jump",
-  // 69. Energy Tank (Botwoon)
+  // Energy Tank (Botwoon)
   "et_maridia_1",
-  // 70. Missile (East Sand Hole), drop down through the right sand pit
+  // Missile (East Sand Hole), drop down through the right sand pit
   "m_maridia_6",
-  // 71. Power Bomb (East Sand Hole), same location as above
+  // Power Bomb (East Sand Hole), same location as above
   "pb_maridia_1",
-  // 72. Spring Ball
+  // Spring Ball
   "spring_ball",
-  // 73. Plasma Beam
+  // Plasma Beam
   "plasma_beam",
-  // 74. Missile (Aqueduct), top right pipes of Aqueduct
+  // Missile (Aqueduct), top right pipes of Aqueduct
   "m_maridia_2",
-  // 75. Super Missile (Aqueduct), same location as above
+  // Super Missile (Aqueduct), same location as above
   "sm_maridia_2",
-  // 76. Reserve Tank (West Sand Hole)
+  // Reserve Tank (West Sand Hole)
   "rt_maridia_1",
-  // 77. Missile (West Sand Hole), drop down through the left sand pit this time
+  // Missile (West Sand Hole), drop down through the left sand pit this time
   "m_maridia_7",
-  // 78. Missile (Left over in Kraid's Lair, accessed with a Power Bomb)
+  // Missile (Left over in Kraid's Lair, accessed with a Power Bomb)
   "m_brinstar_12",
-  // 79. Ice Beam
+  // Ice Beam
   "ice_beam",
-  // 80. Missile ("Lower route" after Ice Beam)
+  // Missile ("Lower route" after Ice Beam)
   "m_norfair_6",
-  // 81. Missile (Golden Torizo) - watch out for that floor too
+  // Missile (Golden Torizo) - watch out for that floor too
   "m_norfair_12",
-  // 82. Super Missile (Golden Torizo)
+  // Super Missile (Golden Torizo)
   "sm_norfair_1",
-  // 83. Screw Attack
+  // Screw Attack
   "screw_attack",
-  // 84. Missile (Mickey Mouse)
+  // Missile (Mickey Mouse)
   "m_norfair_13",
-  // 85. Power Bomb of shame
+  // Power Bomb of shame
   "pb_norfair_2",
-  // 86. Ridley
+  // Ridley
   "ridley",
-  // 87. Energy Tank (Ridley)
+  // Energy Tank (Ridley)
   "et_norfair_4",
-  // 88. Energy Tank (Lower Norfair Fireflea Room)
+  // Energy Tank (Lower Norfair Fireflea Room)
   "et_norfair_3",
-  // 89. Missile (In front of pipe maze)
+  // Missile (In front of pipe maze)
   "m_norfair_14",
-  // 90. Power Bomb (Below the door after pipe maze)
+  // Power Bomb (Below the door after pipe maze)
   "pb_norfair_3",
-  // 91. Missile (Hidden left of "Three Muskateers")
+  // Missile (Hidden left of "Three Muskateers")
   "m_norfair_15",
-  // 92. Missile (Top left green door in Bubble Mountain)
+  // Missile (Top left green door in Bubble Mountain)
   "m_norfair_4",
-  // 93. Reserve Tank (Norfair)
+  // Reserve Tank (Norfair)
   "rt_norfair_1",
-  // 94. Missile (Hidden inside the sphere closest to the previous Reserve Tank)
+  // Missile (Hidden inside the sphere closest to the previous Reserve Tank)
   "m_norfair_5",
-  // 95. Missile (Bubble Mountain), bottom right corner
+  // Missile (Bubble Mountain), bottom right corner
   "m_norfair_2",
-  // 96. X-Ray Scope
+  // X-Ray Scope
   "x_ray_scope",
-  // 97. Power Bomb (Retro Brinstar, above Green Hill)
+  // Power Bomb (Retro Brinstar, above Green Hill)
   "pb_brinstar_3",
-  // 98. Energy Tank (Ceiling right past Construction Zone)
+  // Energy Tank (Ceiling right past Construction Zone)
   "et_brinstar_3",
-  // 99. Missile (To the right of the above location)
+  // Missile (To the right of the above location)
   "m_brinstar_2",
-  // 100-101. Missile x2 (Above the above location, up the shaft)
+  // Missile x2 (Above the above location, up the shaft)
   "m_brinstar_9",
   "m_brinstar_10",
-  // 102. Missile (Below old Mother Brain tank)
+  // Missile (Below old Mother Brain tank)
   "m_crateria_3",
-  // 103. Super Missile (Crateria), hidden right of climb
+  // Super Missile (Crateria), hidden right of climb
   "sm_crateria_1",
-  // 104. Missile (Final), first left Parlor door after climb
+  // Missile (Final), first left Parlor door after climb
   "m_crateria_1",
-  // 105. Mother Brain
+  // Mother Brain
   "mother_brain"
 ];
 

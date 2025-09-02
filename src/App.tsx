@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { allItems, routeOrder, Item, energyTanks, superMissiles, powerBombs, missiles, majorUpgrades, bosses } from './data/items';
+import { allItems, routeOrder, Item, energyTanks, superMissiles, powerBombs, missiles, majorUpgrades, bosses, reserveTanks } from './data/items';
 import ItemCard from './components/ItemCard';
 import Header from './components/Header';
 import FilterBar from './components/FilterBar';
 import ProgressTracker from './components/ProgressTracker';
 
 type ViewMode = 'route' | 'region' | 'type';
-type ItemType = 'all' | 'energy_tanks' | 'super_missiles' | 'power_bombs' | 'missiles' | 'upgrades' | 'bosses';
+type ItemType = 'all' | 'energy_tanks' | 'super_missiles' | 'power_bombs' | 'missiles' | 'reserve_tanks' | 'upgrades' | 'bosses';
 
 function App() {
   const [viewMode, setViewMode] = useState<ViewMode>('route');
@@ -52,6 +52,7 @@ function App() {
           super_missiles: 'Super Missile',
           power_bombs: 'Power Bomb',
           missiles: 'Missile',
+          reserve_tanks: 'Reserve Tank',
           upgrades: 'upgrade',
           bosses: 'boss'
         };
@@ -86,10 +87,11 @@ function App() {
 
   const getItemsForView = () => {
     if (viewMode === 'route') {
-      // Return items in exact route order
-      return routeOrder
+      // Return items in exact route order, but apply filters
+      const routeItems = routeOrder
         .map(id => allItems.find(item => item.id === id))
         .filter((item): item is Item => item !== undefined);
+      return filterItems(routeItems);
     } else if (viewMode === 'region') {
       // Group by region
       const regions = ['Crateria', 'Brinstar', 'Norfair', 'Wrecked Ship', 'Maridia', 'Tourian'];
@@ -106,7 +108,7 @@ function App() {
         'Energy Tanks': energyTanks,
         'Super Missiles': superMissiles,
         'Power Bombs': powerBombs,
-        'Reserve Tanks': allItems.filter(item => item.name === 'Reserve Tank'),
+        'Reserve Tanks': reserveTanks,
         'Missiles': missiles,
         'Major Upgrades': majorUpgrades,
         'Bosses': bosses
@@ -148,13 +150,13 @@ function App() {
       <main className="main-content">
         {viewMode === 'route' && (
           <div className="route-order-view">
-            <h2 className="view-title">📋 100% Route Order</h2>
+            {/* <h2 className="view-title">📋 100% Route Order</h2>
             <p className="view-description">
-              Complete 105-item speedrun sequence from guide.html
-            </p>
-            <div className="route-checklist">
+              Complete 106-item speedrun sequence from guide.html
+            </p> */}
+            <div className="route-grid">
               {(getItemsForView() as Item[]).map((item, index) => (
-                <div key={item.id} className="route-item">
+                <div key={item.id} className="route-card">
                   <div className="route-number">{index + 1}</div>
                   <ItemCard
                     item={item}

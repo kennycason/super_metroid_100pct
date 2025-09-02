@@ -2,7 +2,7 @@ import React from 'react';
 import './FilterBar.css';
 
 type ViewMode = 'route' | 'region' | 'type';
-type ItemType = 'all' | 'energy_tanks' | 'super_missiles' | 'power_bombs' | 'missiles' | 'upgrades' | 'bosses';
+type ItemType = 'all' | 'energy_tanks' | 'super_missiles' | 'power_bombs' | 'missiles' | 'reserve_tanks' | 'upgrades' | 'bosses';
 
 interface FilterBarProps {
   viewMode: ViewMode;
@@ -36,19 +36,19 @@ const FilterBar: React.FC<FilterBarProps> = ({
             className={viewMode === 'route' ? 'active' : ''}
             onClick={() => onViewModeChange('route')}
           >
-            📋 Route Order
+            Route Order
           </button>
           <button 
             className={viewMode === 'region' ? 'active' : ''}
             onClick={() => onViewModeChange('region')}
           >
-            🗺️ By Region
+            By Region
           </button>
           <button 
             className={viewMode === 'type' ? 'active' : ''}
             onClick={() => onViewModeChange('type')}
           >
-            🔧 By Type
+            By Type
           </button>
         </div>
       </div>
@@ -60,12 +60,13 @@ const FilterBar: React.FC<FilterBarProps> = ({
           onChange={(e) => onItemFilterChange(e.target.value as ItemType)}
         >
           <option value="all">All Items</option>
-          <option value="energy_tanks">⚡ Energy Tanks</option>
-          <option value="super_missiles">🚀 Super Missiles</option>
-          <option value="power_bombs">💣 Power Bombs</option>
-          <option value="missiles">🔸 Missiles</option>
-          <option value="upgrades">🔧 Upgrades</option>
-          <option value="bosses">👹 Bosses</option>
+          <option value="energy_tanks">Energy Tanks</option>
+          <option value="missiles">Missiles</option>
+          <option value="super_missiles">Super Missiles</option>
+          <option value="power_bombs">Power Bombs</option>
+          <option value="reserve_tanks">Reserve Tanks</option>
+          <option value="upgrades">Upgrades</option>
+          <option value="bosses">Bosses</option>
         </select>
       </div>
 

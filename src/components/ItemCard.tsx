@@ -117,9 +117,9 @@ const ItemCard: React.FC<ItemCardProps> = ({
         
         <div className="item-details">
           <div className="item-room">📍 {item.room}</div>
-          {item.description && (
+          {/* {item.description && (
             <div className="item-description">{item.description}</div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

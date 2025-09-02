@@ -105,7 +105,3 @@ Feel free to submit issues or pull requests to improve the guide. Possible enhan
 This project is for educational and speedrunning community purposes. All game content and images are property of Nintendo.
 
 ---
-
-**World Record**: 1:12:17 by ShinyZeni
-
-Happy speedrunning! 🚀
