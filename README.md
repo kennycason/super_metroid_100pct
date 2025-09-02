@@ -1,18 +1,10 @@
 # Super Metroid 100%
 
-A modern React/TypeScript guide for tracking Super Metroid 100% speedrun progress.
+A web app to help track Super Metroid 100% speedrun progress.
 
 ![Super Metroid 100% Guide](screenshot.png)
 
-## Features
-
-- **Route Order**: Items in optimal speedrun sequence
-- **Multiple Views**: By region, type, or route order
-- **Responsive**: Works on desktop and mobile
-- **Progress Saves**: Automatically tracks your completion
-- **Inline Images**: All item screenshots included
-
-## Quick Start
+## Quick Start (Will be hosting soon, currently updating images)
 
 ```bash
 npm install
@@ -34,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Usage
 
-1. Select view mode (Route Order, By Region, By Type)
+1. Select view mode (By Route, By Region, By Type)
 2. Filter by item type or region if needed
 3. Click items to mark as collected
 4. Track progress with real-time percentage

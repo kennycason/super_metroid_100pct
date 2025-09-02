@@ -38,7 +38,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
             className={viewMode === 'route' ? 'active' : ''}
             onClick={() => onViewModeChange('route')}
           >
-            Route Order
+            By Route
           </button>
           <button 
             className={viewMode === 'region' ? 'active' : ''}
