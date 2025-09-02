@@ -7,13 +7,9 @@ const Header: React.FC = () => {
       <div className="header-content">
         <h1 className="title">
           <span className="title-main">Super Metroid</span>
-          <span className="title-sub">100% Speedrun Guide</span>
+          <sup className="title-super">100%</sup>
         </h1>
-        {/* <div className="subtitle">
-          Complete item checklist with images • World Record: 1:12:17 by ShinyZeni
-        </div> */}
       </div>
-      <div className="header-bg"></div>
     </header>
   );
 };

@@ -53,7 +53,7 @@ const ProgressTracker: React.FC<ProgressTrackerProps> = ({
               className="counter-icon"
             />
             <span className="counter-text">{counters.energyTanks.collected}/{counters.energyTanks.total}</span>
-            <span className="counter-label">E-Tanks</span>
+            {/* <span className="counter-label">E-Tanks</span> */}
           </div>
           <div className="counter-item">
             <SpriteIcon 
@@ -63,7 +63,7 @@ const ProgressTracker: React.FC<ProgressTrackerProps> = ({
               className="counter-icon"
             />
             <span className="counter-text">{counters.missiles.collected}/{counters.missiles.total}</span>
-            <span className="counter-label">Missiles</span>
+            {/* <span className="counter-label">Missiles</span> */}
           </div>
           <div className="counter-item">
             <SpriteIcon 
@@ -73,7 +73,7 @@ const ProgressTracker: React.FC<ProgressTrackerProps> = ({
               className="counter-icon"
             />
             <span className="counter-text">{counters.superMissiles.collected}/{counters.superMissiles.total}</span>
-            <span className="counter-label">Supers</span>
+            {/* <span className="counter-label">Supers</span> */}
           </div>
           <div className="counter-item">
             <SpriteIcon 
@@ -83,7 +83,7 @@ const ProgressTracker: React.FC<ProgressTrackerProps> = ({
               className="counter-icon"
             />
             <span className="counter-text">{counters.powerBombs.collected}/{counters.powerBombs.total}</span>
-            <span className="counter-label">P-Bombs</span>
+            {/* <span className="counter-label">P-Bombs</span> */}
           </div>
         </div>
         
