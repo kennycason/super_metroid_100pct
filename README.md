@@ -6,11 +6,11 @@ A modern React/TypeScript guide for tracking Super Metroid 100% speedrun progres
 
 ## Features
 
-- 🎯 **Route Order**: Items in optimal speedrun sequence
-- 🗺️ **Multiple Views**: By region, type, or route order
-- 📱 **Responsive**: Works on desktop and mobile
-- 💾 **Progress Saves**: Automatically tracks your completion
-- 🖼️ **Inline Images**: All item screenshots included
+- **Route Order**: Items in optimal speedrun sequence
+- **Multiple Views**: By region, type, or route order
+- **Responsive**: Works on desktop and mobile
+- **Progress Saves**: Automatically tracks your completion
+- **Inline Images**: All item screenshots included
 
 ## Quick Start
 
@@ -41,3 +41,8 @@ Open [http://localhost:3000](http://localhost:3000)
 5. Use Reset button to start new runs
 
 Built for the speedrunning community. All game content © Nintendo.
+
+## Thanks
+
+- Adapted from This 100% guide: https://wiki.supermetroid.run/100%25
+- Some room images from: https://metroid.retropixel.net/games/metroid3/ & https://metroid.fandom.com/wiki/Metroid_Wiki
