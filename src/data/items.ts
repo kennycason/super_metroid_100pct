@@ -456,9 +456,9 @@ export const reserveTanks: Item[] = [
   }
 ];
 
-// Selected missile locations (the "bastard missiles" and other commonly missed ones)
+// All missile locations in route order (based on guide.html)
 export const missiles: Item[] = [
-  // Brinstar Missiles
+  // 1. Missile (Awakening) - first missile in route
   {
     id: "m_brinstar_1",
     name: "Missile",
@@ -471,65 +471,7 @@ export const missiles: Item[] = [
     nickname: "Missile (Awakening)",
     type: "collectible"
   },
-  {
-    id: "m_brinstar_2",
-    name: "Missile",
-    location: "Blue Brinstar Energy Tank Room",
-    room: "Blue Brinstar Energy Tank Room",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar2.png",
-    sourceImageUrl: "/images/thumb/8/8b/MissileBrinstar2.png/230px-MissileBrinstar2.png",
-    imageName: "230px-MissileBrinstar2.png",
-    type: "collectible"
-  },
-  {
-    id: "m_brinstar_3",
-    name: "Missile",
-    location: "Early Supers Room",
-    room: "Early Supers Room",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar3.png",
-    sourceImageUrl: "/images/thumb/3/38/MissileBrinstar3.png/230px-MissileBrinstar3.png",
-    imageName: "230px-MissileBrinstar3.png",
-    nickname: "Missile (Below the bridge)",
-    type: "collectible"
-  },
-  {
-    id: "m_brinstar_4",
-    name: "Missile",
-    location: "Big Pink",
-    room: "Big Pink",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar4.png",
-    sourceImageUrl: "/images/thumb/9/91/MissileBrinstar4.png/230px-MissileBrinstar4.png",
-    imageName: "230px-MissileBrinstar4.png",
-    nickname: "Missile (Behind the Grapple blocks)",
-    type: "collectible"
-  },
-  {
-    id: "m_brinstar_5",
-    name: "Missile",
-    location: "Big Pink",
-    room: "Big Pink",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar5.png",
-    sourceImageUrl: "/images/thumb/b/bc/MissileBrinstar5.png/230px-MissileBrinstar5.png",
-    imageName: "230px-MissileBrinstar5.png",
-    nickname: "Missile (Charge Beam)",
-    type: "collectible"
-  },
-  {
-    id: "m_brinstar_6",
-    name: "Missile",
-    location: "Green Hill Zone",
-    room: "Green Hill Zone",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar6.png",
-    sourceImageUrl: "/images/thumb/6/62/MissileBrinstar6.png/230px-MissileBrinstar6.png",
-    imageName: "230px-MissileBrinstar6.png",
-    nickname: "Missile (Green Hill pipe)",
-    type: "collectible"
-  },
+  // 2-3. Missile x2 (To the right of Early Supers)
   {
     id: "m_brinstar_7",
     name: "Missile",
@@ -554,6 +496,487 @@ export const missiles: Item[] = [
     nickname: "Missile x2 (To the right of Early Supers)",
     type: "collectible"
   },
+  // 4. Missile (Below the bridge)
+  {
+    id: "m_brinstar_3",
+    name: "Missile",
+    location: "Early Supers Room",
+    room: "Early Supers Room",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar3.png",
+    sourceImageUrl: "/images/thumb/3/38/MissileBrinstar3.png/230px-MissileBrinstar3.png",
+    imageName: "230px-MissileBrinstar3.png",
+    nickname: "Missile (Below the bridge)",
+    type: "collectible"
+  },
+  // 5. Missile (Charge Beam)
+  {
+    id: "m_brinstar_5",
+    name: "Missile",
+    location: "Big Pink",
+    room: "Big Pink",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar5.png",
+    sourceImageUrl: "/images/thumb/b/bc/MissileBrinstar5.png/230px-MissileBrinstar5.png",
+    imageName: "230px-MissileBrinstar5.png",
+    nickname: "Missile (Charge Beam)",
+    type: "collectible"
+  },
+  // 6. Missile (Hi-Jump Boots)
+  {
+    id: "m_norfair_1",
+    name: "Missile",
+    location: "Hi Jump Energy Tank Room",
+    room: "Hi Jump Energy Tank Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair1.png",
+    sourceImageUrl: "/images/thumb/d/da/MissileNorfair1.png/230px-MissileNorfair1.png",
+    imageName: "230px-MissileNorfair1.png",
+    type: "collectible"
+  },
+  // 7. Missile (In center Cathedral lava pit)
+  {
+    id: "m_norfair_10",
+    name: "Missile",
+    location: "Cathedral",
+    room: "Cathedral",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair10.png",
+    sourceImageUrl: "/images/thumb/4/44/MissileNorfair10.png/230px-MissileNorfair10.png",
+    imageName: "230px-MissileNorfair10.png",
+    type: "collectible"
+  },
+  // 8. Missile (Hidden in ceiling right before Speed Booster door)
+  {
+    id: "m_norfair_3",
+    name: "Missile",
+    location: "Speed Booster Hall",
+    room: "Speed Booster Hall",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair3.png",
+    sourceImageUrl: "/images/thumb/b/b5/MissileNorfair3.png/230px-MissileNorfair3.png",
+    imageName: "230px-MissileNorfair3.png",
+    type: "collectible"
+  },
+  // 9. Missile (Wave Beam)
+  {
+    id: "m_norfair_wave_beam",
+    name: "Missile",
+    location: "Double Chamber",
+    room: "Double Chamber",
+    region: "Norfair",
+    image: "/images/229px-MissileNorfair9.png",
+    sourceImageUrl: "/images/thumb/6/67/MissileNorfair9.png/229px-MissileNorfair9.png",
+    imageName: "229px-MissileNorfair9.png",
+    nickname: "Missile (Wave Beam)",
+    type: "collectible"
+  },
+  // 10. Missile (Grappling Beam)
+  {
+    id: "m_norfair_grappling_beam",
+    name: "Missile",
+    location: "Post Crocomire Jump Room",
+    room: "Post Crocomire Jump Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair11.png",
+    sourceImageUrl: "/images/thumb/f/f9/MissileNorfair11.png/230px-MissileNorfair11.png",
+    imageName: "230px-MissileNorfair11.png",
+    nickname: "Missile (Grappling Beam)",
+    type: "collectible"
+  },
+  // 11. Missile (Lava tide)
+  {
+    id: "m_norfair_7",
+    name: "Missile",
+    location: "Post Crocomire Missile Room",
+    room: "Post Crocomire Missile Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair7.png",
+    sourceImageUrl: "/images/thumb/1/14/MissileNorfair7.png/230px-MissileNorfair7.png",
+    imageName: "230px-MissileNorfair7.png",
+    type: "collectible"
+  },
+  // 12. Missile (Next to green gate) in Crocomire Escape
+  {
+    id: "m_norfair_8",
+    name: "Missile",
+    location: "Crocomire Escape",
+    room: "Crocomire Escape",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair8.png",
+    sourceImageUrl: "/images/thumb/0/0a/MissileNorfair8.png/230px-MissileNorfair8.png",
+    imageName: "230px-MissileNorfair8.png",
+    type: "collectible"
+  },
+  // 13. Missile (Hidden behind Power Bomb (Alpha))
+  {
+    id: "m_brinstar_11",
+    name: "Missile",
+    location: "Alpha Power Bomb Room",
+    room: "Alpha Power Bomb Room",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar11.png",
+    sourceImageUrl: "/images/thumb/d/d7/MissileBrinstar11.png/230px-MissileBrinstar11.png",
+    imageName: "230px-MissileBrinstar11.png",
+    nickname: "Missile (Hidden behind Power Bomb (Alpha))",
+    type: "collectible"
+  },
+  // 14. Missile (Moat)
+  {
+    id: "m_crateria_2",
+    name: "Missile", 
+    location: "Moat",
+    room: "The Moat",
+    region: "Crateria",
+    image: "/images/230px-MissileCrateria2.png",
+    sourceImageUrl: "/images/thumb/1/1f/MissileCrateria2.png/230px-MissileCrateria2.png",
+    imageName: "230px-MissileCrateria2.png",
+    nickname: "Moat Missile",
+    type: "collectible"
+  },
+  // 15. Missile (Hidden to the left of the main Wrecked Ship shaft)
+  {
+    id: "m_wrecked_ship_1",
+    name: "Missile",
+    location: "Wrecked Ship Main Shaft",
+    room: "Wrecked Ship Main Shaft",
+    region: "Wrecked Ship",
+    image: "/images/230px-MissileWreckedShip1.png",
+    sourceImageUrl: "/images/thumb/0/0b/MissileWreckedShip1.png/230px-MissileWreckedShip1.png",
+    imageName: "230px-MissileWreckedShip1.png",
+    type: "collectible"
+  },
+  // 16. Missile (Right of attic)
+  {
+    id: "m_wrecked_ship_2",
+    name: "Missile",
+    location: "Assembly Line",
+    room: "Assembly Line",
+    region: "Wrecked Ship",
+    image: "/images/230px-MissileWreckedShip2.png",
+    sourceImageUrl: "/images/thumb/7/7a/MissileWreckedShip2.png/230px-MissileWreckedShip2.png",
+    imageName: "230px-MissileWreckedShip2.png",
+    type: "collectible"
+  },
+  // 17. Missile (Hidden in highest point of the mountain to the left)
+  {
+    id: "m_crateria_4",
+    name: "Missile",
+    location: "West Ocean",
+    room: "West Ocean",
+    region: "Crateria",
+    image: "/images/230px-MissileCrateria4.png",
+    sourceImageUrl: "/images/thumb/6/65/MissileCrateria4.png/230px-MissileCrateria4.png",
+    imageName: "230px-MissileCrateria4.png",
+    type: "collectible"
+  },
+  // 18. Missile (Hidden in ground maze to the left)
+  {
+    id: "m_crateria_5",
+    name: "Missile",
+    location: "West Ocean",
+    room: "West Ocean",
+    region: "Crateria",
+    image: "/images/230px-MissileCrateria5.png",
+    sourceImageUrl: "/images/thumb/e/e8/MissileCrateria5.png/230px-MissileCrateria5.png",
+    imageName: "230px-MissileCrateria5.png",
+    type: "collectible"
+  },
+  // 19. Missile (Gravity Suit)
+  {
+    id: "m_wrecked_ship_gravity_suit",
+    name: "Missile",
+    location: "Bowling Alley",
+    room: "Bowling Alley",
+    region: "Wrecked Ship",
+    image: "/images/230px-MissileWreckedShip3.png",
+    sourceImageUrl: "/images/thumb/3/30/MissileWreckedShip3.png/230px-MissileWreckedShip3.png",
+    imageName: "230px-MissileWreckedShip3.png",
+    nickname: "Missile (Gravity Suit)",
+    type: "collectible"
+  },
+  // 20. Missile (Bottom left of ocean)
+  {
+    id: "m_crateria_6",
+    name: "Missile",
+    location: "West Ocean",
+    room: "West Ocean",
+    region: "Crateria",
+    image: "/images/230px-MissileCrateria6.png",
+    sourceImageUrl: "/images/thumb/8/83/MissileCrateria6.png/230px-MissileCrateria6.png",
+    imageName: "230px-MissileCrateria6.png",
+    type: "collectible"
+  },
+  // 21-22. Missile x2 (Crumble shaft after Gauntlet)
+  {
+    id: "m_crateria_7",
+    name: "Missile",
+    location: "Green Pirates Shaft",
+    room: "Green Pirates Shaft",
+    region: "Crateria",
+    image: "/images/230px-MissileCrateria7.png",
+    sourceImageUrl: "/images/thumb/c/c7/MissileCrateria7.png/230px-MissileCrateria7.png",
+    imageName: "230px-MissileCrateria7.png",
+    type: "collectible"
+  },
+  {
+    id: "m_crateria_8",
+    name: "Missile",
+    location: "Green Pirates Shaft",
+    room: "Green Pirates Shaft",
+    region: "Crateria",
+    image: "/images/230px-MissileCrateria7.png",
+    sourceImageUrl: "/images/thumb/c/c7/MissileCrateria7.png/230px-MissileCrateria7.png",
+    imageName: "230px-MissileCrateria7.png",
+    type: "collectible"
+  },
+  // 23. Missile (Behind the Grapple blocks)
+  {
+    id: "m_brinstar_4",
+    name: "Missile",
+    location: "Big Pink",
+    room: "Big Pink",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar4.png",
+    sourceImageUrl: "/images/thumb/9/91/MissileBrinstar4.png/230px-MissileBrinstar4.png",
+    imageName: "230px-MissileBrinstar4.png",
+    nickname: "Missile (Behind the Grapple blocks)",
+    type: "collectible"
+  },
+  // 24. Missile (Green Hill pipe)
+  {
+    id: "m_brinstar_6",
+    name: "Missile",
+    location: "Green Hill Zone",
+    room: "Green Hill Zone",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar6.png",
+    sourceImageUrl: "/images/thumb/6/62/MissileBrinstar6.png/230px-MissileBrinstar6.png",
+    imageName: "230px-MissileBrinstar6.png",
+    nickname: "Missile (Green Hill pipe)",
+    type: "collectible"
+  },
+  // 25. Missile (Main Street)
+  {
+    id: "m_maridia_1",
+    name: "Missile",
+    location: "Main Street",
+    room: "Main Street",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia1.png",
+    sourceImageUrl: "/images/thumb/6/64/MissileMaridia1.png/230px-MissileMaridia1.png",
+    imageName: "230px-MissileMaridia1.png",
+    type: "collectible"
+  },
+  // 26. Missile (Mama Turtle)
+  {
+    id: "m_maridia_8",
+    name: "Missile",
+    location: "Mama Turtle Room",
+    room: "Mama Turtle Room",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia8.png",
+    sourceImageUrl: "/images/thumb/b/b7/MissileMaridia8.png/230px-MissileMaridia8.png",
+    imageName: "230px-MissileMaridia8.png",
+    nickname: "Missile (Mama Turtle)",
+    type: "collectible"
+  },
+  // 27. Missile (Hidden in right side of Maridian beach)
+  {
+    id: "m_maridia_4",
+    name: "Missile",
+    location: "Pseudo Plasma Spark Room",
+    room: "Pseudo Plasma Spark Room",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia4.png",
+    sourceImageUrl: "/images/thumb/b/b4/MissileMaridia4.png/230px-MissileMaridia4.png",
+    imageName: "230px-MissileMaridia4.png",
+    type: "collectible"
+  },
+  // 28. Missile (Same location as above super missile)
+  {
+    id: "m_maridia_5",
+    name: "Missile",
+    location: "Watering Hole",
+    room: "Watering Hole",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia5.png",
+    sourceImageUrl: "/images/thumb/f/fa/MissileMaridia5.png/230px-MissileMaridia5.png",
+    imageName: "230px-MissileMaridia5.png",
+    type: "collectible"
+  },
+  // 29. Missile (Draygon)
+  {
+    id: "m_maridia_draygon",
+    name: "Missile",
+    location: "The Precious Room",
+    room: "The Precious Room",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia3.png",
+    sourceImageUrl: "/images/thumb/9/91/MissileMaridia3.png/230px-MissileMaridia3.png",
+    imageName: "230px-MissileMaridia3.png",
+    nickname: "Missile (Draygon)",
+    type: "collectible"
+  },
+  // 30. Missile (East Sand Hole)
+  {
+    id: "m_maridia_6",
+    name: "Missile",
+    location: "East Sand Hole",
+    room: "East Sand Hole",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia6.png",
+    sourceImageUrl: "/images/thumb/8/89/MissileMaridia6.png/230px-MissileMaridia6.png",
+    imageName: "230px-MissileMaridia6.png",
+    type: "collectible"
+  },
+  // 31. Missile (Aqueduct)
+  {
+    id: "m_maridia_2",
+    name: "Missile",
+    location: "Aqueduct",
+    room: "Aqueduct",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia2.png",
+    sourceImageUrl: "/images/thumb/7/77/MissileMaridia2.png/230px-MissileMaridia2.png",
+    imageName: "230px-MissileMaridia2.png",
+    type: "collectible"
+  },
+  // 32. Missile (West Sand Hole)
+  {
+    id: "m_maridia_7",
+    name: "Missile",
+    location: "West Sand Hole",
+    room: "West Sand Hole",
+    region: "Maridia",
+    image: "/images/230px-MissileMaridia7.png",
+    sourceImageUrl: "/images/thumb/2/2a/MissileMaridia7.png/230px-MissileMaridia7.png",
+    imageName: "230px-MissileMaridia7.png",
+    type: "collectible"
+  },
+  // 33. Missile (Left over in Kraid's Lair)
+  {
+    id: "m_brinstar_12",
+    name: "Missile",
+    location: "Warehouse Keyhunter Room",
+    room: "Warehouse Keyhunter Room",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar12.png",
+    sourceImageUrl: "/images/thumb/5/54/MissileBrinstar12.png/230px-MissileBrinstar12.png",
+    imageName: "230px-MissileBrinstar12.png",
+    nickname: "Missile (Kraid's Lair, with Power Bomb)",
+    type: "collectible"
+  },
+  // 34. Missile (Lower route after Ice Beam)
+  {
+    id: "m_norfair_6",
+    name: "Missile",
+    location: "Crumble Shaft",
+    room: "Crumble Shaft",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair6.png",
+    sourceImageUrl: "/images/thumb/a/a2/MissileNorfair6.png/230px-MissileNorfair6.png",
+    imageName: "230px-MissileNorfair6.png",
+    type: "collectible"
+  },
+  // 35. Missile (Golden Torizo)
+  {
+    id: "m_norfair_12",
+    name: "Missile",
+    location: "Golden Torizo's Room",
+    room: "Golden Torizo's Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair12.png",
+    sourceImageUrl: "/images/thumb/3/3b/MissileNorfair12.png/230px-MissileNorfair12.png",
+    imageName: "230px-MissileNorfair12.png",
+    nickname: "Missile (Golden Torizo)",
+    type: "collectible"
+  },
+  // 36. Missile (Mickey Mouse)
+  {
+    id: "m_norfair_13",
+    name: "Missile",
+    location: "Mickey Mouse Room",
+    room: "Mickey Mouse Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair13.png",
+    sourceImageUrl: "/images/thumb/d/d3/MissileNorfair13.png/230px-MissileNorfair13.png",
+    imageName: "230px-MissileNorfair13.png",
+    type: "collectible"
+  },
+  // 37. Missile (In front of pipe maze)
+  {
+    id: "m_norfair_14",
+    name: "Missile",
+    location: "Lower Norfair Spring Ball Maze Room",
+    room: "Lower Norfair Spring Ball Maze Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair14.png",
+    sourceImageUrl: "/images/thumb/c/ca/MissileNorfair14.png/230px-MissileNorfair14.png",
+    imageName: "230px-MissileNorfair14.png",
+    type: "collectible"
+  },
+  // 38. Missile (Hidden left of Three Muskateers)
+  {
+    id: "m_norfair_15",
+    name: "Missile",
+    location: "Three Muskateers' Room",
+    room: "Three Muskateers' Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair15.png",
+    sourceImageUrl: "/images/thumb/0/0b/MissileNorfair15.png/230px-MissileNorfair15.png",
+    imageName: "230px-MissileNorfair15.png",
+    type: "collectible"
+  },
+  // 39. Missile (Top left green door in Bubble Mountain)
+  {
+    id: "m_norfair_4",
+    name: "Missile",
+    location: "Green Bubbles Missile Room",
+    room: "Green Bubbles Missile Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair4.png",
+    sourceImageUrl: "/images/thumb/a/a3/MissileNorfair4.png/230px-MissileNorfair4.png",
+    imageName: "230px-MissileNorfair4.png",
+    type: "collectible"
+  },
+  // 40. Missile (Hidden inside the sphere closest to the previous Reserve Tank)
+  {
+    id: "m_norfair_5",
+    name: "Missile",
+    location: "Norfair Reserve Tank Room",
+    room: "Norfair Reserve Tank Room",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair5.png",
+    sourceImageUrl: "/images/thumb/5/58/MissileNorfair5.png/230px-MissileNorfair5.png",
+    imageName: "230px-MissileNorfair5.png",
+    type: "collectible"
+  },
+  // 41. Missile (Bubble Mountain), bottom right corner
+  {
+    id: "m_norfair_2",
+    name: "Missile",
+    location: "Bubble Mountain",
+    room: "Bubble Mountain",
+    region: "Norfair",
+    image: "/images/230px-MissileNorfair2.png",
+    sourceImageUrl: "/images/thumb/4/43/MissileNorfair2.png/230px-MissileNorfair2.png",
+    imageName: "230px-MissileNorfair2.png",
+    type: "collectible"
+  },
+  // 42. Missile (To the right of the above location)
+  {
+    id: "m_brinstar_2",
+    name: "Missile",
+    location: "Blue Brinstar Energy Tank Room",
+    room: "Blue Brinstar Energy Tank Room",
+    region: "Brinstar",
+    image: "/images/230px-MissileBrinstar2.png",
+    sourceImageUrl: "/images/thumb/8/8b/MissileBrinstar2.png/230px-MissileBrinstar2.png",
+    imageName: "230px-MissileBrinstar2.png",
+    type: "collectible"
+  },
+  // 43-44. Missile x2 (Above the above location, up the shaft)
   {
     id: "m_brinstar_9",
     name: "Missile",
@@ -578,128 +1001,7 @@ export const missiles: Item[] = [
     nickname: "Missile x2 (Past invisible bridge)",
     type: "collectible"
   },
-  {
-    id: "m_brinstar_11",
-    name: "Missile",
-    location: "Alpha Power Bomb Room",
-    room: "Alpha Power Bomb Room",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar11.png",
-    sourceImageUrl: "/images/thumb/d/d7/MissileBrinstar11.png/230px-MissileBrinstar11.png",
-    imageName: "230px-MissileBrinstar11.png",
-    nickname: "Missile (Hidden behind Power Bomb (Alpha))",
-    type: "collectible"
-  },
-  {
-    id: "m_brinstar_12",
-    name: "Missile",
-    location: "Warehouse Keyhunter Room",
-    room: "Warehouse Keyhunter Room",
-    region: "Brinstar",
-    image: "/images/230px-MissileBrinstar12.png",
-    sourceImageUrl: "/images/thumb/5/54/MissileBrinstar12.png/230px-MissileBrinstar12.png",
-    imageName: "230px-MissileBrinstar12.png",
-    nickname: "Missile (Kraid's Lair, with Power Bomb)",
-    type: "collectible"
-  },
-  // Additional specific missiles mentioned in guide.html
-    {
-    id: "m_norfair_wave_beam",
-    name: "Missile",
-    location: "Double Chamber",
-    room: "Double Chamber",
-    region: "Norfair",
-    image: "/images/229px-MissileNorfair9.png",
-    sourceImageUrl: "/images/thumb/6/67/MissileNorfair9.png/229px-MissileNorfair9.png",
-    imageName: "229px-MissileNorfair9.png",
-    nickname: "Missile (Wave Beam)",
-    type: "collectible"
-  },
-    {
-    id: "m_norfair_grappling_beam",
-    name: "Missile",
-    location: "Post Crocomire Jump Room",
-    room: "Post Crocomire Jump Room",
-    region: "Norfair",
-    image: "/images/230px-MissileNorfair11.png",
-    sourceImageUrl: "/images/thumb/f/f9/MissileNorfair11.png/230px-MissileNorfair11.png",
-    imageName: "230px-MissileNorfair11.png",
-    nickname: "Missile (Grappling Beam)",
-    type: "collectible"
-  },
-  {
-    id: "m_norfair_12",
-    name: "Missile",
-    location: "Golden Torizo's Room",
-    room: "Golden Torizo's Room",
-    region: "Norfair",
-    image: "/images/230px-MissileNorfair12.png",
-    sourceImageUrl: "/images/thumb/3/3b/MissileNorfair12.png/230px-MissileNorfair12.png",
-    imageName: "230px-MissileNorfair12.png",
-    nickname: "Missile (Golden Torizo)",
-    type: "collectible"
-  },
-  {
-    id: "m_wrecked_ship_gravity_suit",
-    name: "Missile",
-    location: "Bowling Alley",
-    room: "Bowling Alley",
-    region: "Wrecked Ship",
-    image: "/images/230px-MissileWreckedShip3.png",
-    sourceImageUrl: "/images/thumb/3/30/MissileWreckedShip3.png/230px-MissileWreckedShip3.png",
-    imageName: "230px-MissileWreckedShip3.png",
-    nickname: "Missile (Gravity Suit)",
-    type: "collectible"
-  },
-  {
-    id: "m_maridia_8",
-    name: "Missile",
-    location: "Mama Turtle Room",
-    room: "Mama Turtle Room",
-    region: "Maridia",
-    image: "/images/230px-MissileMaridia8.png",
-    sourceImageUrl: "/images/thumb/b/b7/MissileMaridia8.png/230px-MissileMaridia8.png",
-    imageName: "230px-MissileMaridia8.png",
-    nickname: "Missile (Mama Turtle)",
-    type: "collectible"
-  },
-  {
-    id: "m_maridia_draygon",
-    name: "Missile",
-    location: "The Precious Room",
-    room: "The Precious Room",
-    region: "Maridia",
-    image: "/images/230px-MissileMaridia3.png",
-    sourceImageUrl: "/images/thumb/9/91/MissileMaridia3.png/230px-MissileMaridia3.png",
-    imageName: "230px-MissileMaridia3.png",
-    nickname: "Missile (Draygon)",
-    type: "collectible"
-  },
-  // Crateria Missiles  
-  {
-    id: "m_crateria_1",
-    name: "Missile",
-    location: "Final Missile",
-    room: "The Final Missile",
-    region: "Crateria",
-    image: "/images/230px-MissileCrateria1.png",
-    sourceImageUrl: "/images/thumb/2/2d/MissileCrateria1.png/230px-MissileCrateria1.png",
-    imageName: "230px-MissileCrateria1.png",
-    nickname: "Final Missile",
-    type: "collectible"
-  },
-  {
-    id: "m_crateria_2",
-    name: "Missile", 
-    location: "Moat",
-    room: "The Moat",
-    region: "Crateria",
-    image: "/images/230px-MissileCrateria2.png",
-    sourceImageUrl: "/images/thumb/1/1f/MissileCrateria2.png/230px-MissileCrateria2.png",
-    imageName: "230px-MissileCrateria2.png",
-    nickname: "Moat Missile",
-    type: "collectible"
-  },
+  // 45. Missile (Below old Mother Brain tank)
   {
     id: "m_crateria_3",
     name: "Missile",
@@ -711,59 +1013,17 @@ export const missiles: Item[] = [
     imageName: "230px-MissileCrateria3.png",
     type: "collectible"
   },
+  // 46. Missile (Final)
   {
-    id: "m_crateria_4",
+    id: "m_crateria_1",
     name: "Missile",
-    location: "West Ocean",
-    room: "West Ocean",
+    location: "Final Missile",
+    room: "The Final Missile",
     region: "Crateria",
-    image: "/images/230px-MissileCrateria4.png",
-    sourceImageUrl: "/images/thumb/6/65/MissileCrateria4.png/230px-MissileCrateria4.png",
-    imageName: "230px-MissileCrateria4.png",
-    type: "collectible"
-  },
-  {
-    id: "m_crateria_5",
-    name: "Missile",
-    location: "West Ocean",
-    room: "West Ocean",
-    region: "Crateria",
-    image: "/images/230px-MissileCrateria5.png",
-    sourceImageUrl: "/images/thumb/e/e8/MissileCrateria5.png/230px-MissileCrateria5.png",
-    imageName: "230px-MissileCrateria5.png",
-    type: "collectible"
-  },
-  {
-    id: "m_crateria_6",
-    name: "Missile",
-    location: "West Ocean",
-    room: "West Ocean",
-    region: "Crateria",
-    image: "/images/230px-MissileCrateria6.png",
-    sourceImageUrl: "/images/thumb/8/83/MissileCrateria6.png/230px-MissileCrateria6.png",
-    imageName: "230px-MissileCrateria6.png",
-    type: "collectible"
-  },
-  {
-    id: "m_crateria_7",
-    name: "Missile",
-    location: "Green Pirates Shaft",
-    room: "Green Pirates Shaft",
-    region: "Crateria",
-    image: "/images/230px-MissileCrateria7.png",
-    sourceImageUrl: "/images/thumb/c/c7/MissileCrateria7.png/230px-MissileCrateria7.png",
-    imageName: "230px-MissileCrateria7.png",
-    type: "collectible"
-  },
-  {
-    id: "m_crateria_8",
-    name: "Missile",
-    location: "Green Pirates Shaft",
-    room: "Green Pirates Shaft",
-    region: "Crateria",
-    image: "/images/230px-MissileCrateria7.png",
-    sourceImageUrl: "/images/thumb/c/c7/MissileCrateria7.png/230px-MissileCrateria7.png",
-    imageName: "230px-MissileCrateria7.png",
+    image: "/images/230px-MissileCrateria1.png",
+    sourceImageUrl: "/images/thumb/2/2d/MissileCrateria1.png/230px-MissileCrateria1.png",
+    imageName: "230px-MissileCrateria1.png",
+    nickname: "Final Missile",
     type: "collectible"
   }
 ];
@@ -1085,6 +1345,8 @@ export const routeOrder: string[] = [
   "m_brinstar_5",
   // Charge Beam
   "charge_beam",
+  // Missile (Green Hill pipe)
+  "m_brinstar_6",
   // Spazer
   "spazer",
   // Kraid
@@ -1121,10 +1383,10 @@ export const routeOrder: string[] = [
   "m_norfair_7",
   // Missile (Next to green gate) in Crocomire Escape
   "m_norfair_8",
-  // Missile (Hidden behind Power Bomb (Alpha))
-  "m_brinstar_11",
   // Power Bomb (Alpha), the any% pack
   "pb_brinstar_1",
+  // Missile (Hidden behind Power Bomb (Alpha))
+  "m_brinstar_11",
   // Power Bomb (Beta), Green door left of elevator
   "pb_brinstar_2",
   // Missile (Moat)
@@ -1176,8 +1438,6 @@ export const routeOrder: string[] = [
   "sm_brinstar_1",
   // Energy Tank (Behind/below Charge Beam's location)
   "et_brinstar_5",
-  // Missile (Green Hill pipe)
-  "m_brinstar_6",
   // Missile (Main Street)
   "m_maridia_1",
   // Energy Tank (Mama Turtle)
@@ -1192,14 +1452,16 @@ export const routeOrder: string[] = [
   "sm_maridia_3",
   // Missile (Same location as above)
   "m_maridia_5",
+  // Botwoon
+  "botwoon",
+  // Energy Tank (Botwoon)
+  "et_maridia_1",
   // Missile (Draygon)
   "m_maridia_draygon",
   // Draygon
   "draygon",
   // Space Jump
   "space_jump",
-  // Energy Tank (Botwoon)
-  "et_maridia_1",
   // Missile (East Sand Hole), drop down through the right sand pit
   "m_maridia_6",
   // Power Bomb (East Sand Hole), same location as above
@@ -1226,6 +1488,8 @@ export const routeOrder: string[] = [
   "m_norfair_12",
   // Super Missile (Golden Torizo)
   "sm_norfair_1",
+  // Golden Torizo
+  "golden_torizo",
   // Screw Attack
   "screw_attack",
   // Missile (Mickey Mouse)
