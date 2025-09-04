@@ -122,32 +122,70 @@ input::placeholder {
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
 }
 
-/* Responsive Design - Keep filters in row format until very small screens */
+/* Responsive Design - Keep filters in row format on mobile */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .filter-bar {
-    gap: 12px;
-    padding: 12px;
-    margin: 12px;
-  }
-  
-  .button-group {
-    flex-direction: column;
+    gap: 8px;
+    padding: 8px 12px;
+    margin: 8px;
   }
   
   .button-group button {
-    flex: none;
-    font-size: 0.85em;
-    padding: 8px 10px;
+    font-size: 0.8em;
+    padding: 6px 8px;
   }
   
   select {
-    min-width: 80px;
-    max-width: 100px;
+    min-width: 70px;
+    max-width: 90px;
+    font-size: 0.8em;
+    padding: 6px 8px;
   }
   
   input {
-    min-width: 100px;
-    max-width: 120px;
+    min-width: 90px;
+    max-width: 110px;
+    font-size: 0.8em;
+    padding: 6px 8px;
+  }
+  
+  .reset-button {
+    font-size: 0.8em;
+    padding: 6px 8px;
+    min-width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-bar {
+    gap: 6px;
+    padding: 6px 10px;
+    margin: 6px;
+  }
+  
+  .button-group button {
+    font-size: 0.75em;
+    padding: 5px 6px;
+  }
+  
+  select {
+    min-width: 60px;
+    max-width: 80px;
+    font-size: 0.75em;
+    padding: 5px 6px;
+  }
+  
+  input {
+    min-width: 80px;
+    max-width: 100px;
+    font-size: 0.75em;
+    padding: 5px 6px;
+  }
+  
+  .reset-button {
+    font-size: 0.75em;
+    padding: 5px 6px;
+    min-width: 50px;
   }
 }
