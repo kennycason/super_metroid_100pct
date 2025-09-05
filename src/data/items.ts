@@ -1371,6 +1371,16 @@ export const routeOrder: string[] = [
   "m_norfair_wave_beam",
   // Wave Beam
   "wave_beam",
+  // Missile (Top left green door in Bubble Mountain)
+  "m_norfair_4",
+  // Reserve Tank (Norfair)
+  "rt_norfair_1",
+  // Missile (Hidden inside the sphere closest to the previous Reserve Tank)
+  "m_norfair_5",
+  // Missile (Bubble Mountain), bottom right corner
+  "m_norfair_2",
+  // Crocomire
+  "crocomire",
   // Energy Tank (Crocomire)
   "et_norfair_2",
   // Power Bomb (Red door directly left after Crocomire)
@@ -1462,6 +1472,10 @@ export const routeOrder: string[] = [
   "draygon",
   // Space Jump
   "space_jump",
+  // Missile (Aqueduct), top right pipes of Aqueduct
+  "m_maridia_2",
+  // Super Missile (Aqueduct), same location as above
+  "sm_maridia_2",
   // Missile (East Sand Hole), drop down through the right sand pit
   "m_maridia_6",
   // Power Bomb (East Sand Hole), same location as above
@@ -1470,10 +1484,6 @@ export const routeOrder: string[] = [
   "spring_ball",
   // Plasma Beam
   "plasma_beam",
-  // Missile (Aqueduct), top right pipes of Aqueduct
-  "m_maridia_2",
-  // Super Missile (Aqueduct), same location as above
-  "sm_maridia_2",
   // Reserve Tank (West Sand Hole)
   "rt_maridia_1",
   // Missile (West Sand Hole), drop down through the left sand pit this time
@@ -1508,14 +1518,6 @@ export const routeOrder: string[] = [
   "pb_norfair_3",
   // Missile (Hidden left of "Three Muskateers")
   "m_norfair_15",
-  // Missile (Top left green door in Bubble Mountain)
-  "m_norfair_4",
-  // Reserve Tank (Norfair)
-  "rt_norfair_1",
-  // Missile (Hidden inside the sphere closest to the previous Reserve Tank)
-  "m_norfair_5",
-  // Missile (Bubble Mountain), bottom right corner
-  "m_norfair_2",
   // X-Ray Scope
   "x_ray_scope",
   // Power Bomb (Retro Brinstar, above Green Hill)
