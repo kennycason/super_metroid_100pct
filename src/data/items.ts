@@ -1332,13 +1332,13 @@ export const routeOrder: string[] = [
   "bombs",
   // Energy Tank (Terminator)
   "et_crateria_1",
+  // Early Super Missile
+  "sm_brinstar_2",
   // Reserve Tank (In the hands of the Chozo)
   "rt_brinstar_1",
   // Missile x2 (To the right of Early Supers)
   "m_brinstar_7",
   "m_brinstar_8",
-  // Early Super Missile
-  "sm_brinstar_2",
   // Missile (Below the bridge)
   "m_brinstar_3",
   // Missile (Charge Beam)
